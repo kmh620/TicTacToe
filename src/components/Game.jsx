@@ -1,7 +1,27 @@
+import React from 'react';
+import { Switch, Route, withRouter } from 'react-router-dom';
+import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
+
+
+
+
 class Game extends React.Component {
+
+
+  /*textAlign: 'center',
+    display: 'grid',
+    gridTemplateColumns: '1fr 1fr 1fr',
+    margin: '30'*/
+  const gameStyle = {
+
+  }
+
+
+
   render() {
     return (
-      <div className="game">
+      <div className="game" style={gameStyle}>
         <div className="game-board">
           <Board />
         </div>
